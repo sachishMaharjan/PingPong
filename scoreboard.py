@@ -39,11 +39,11 @@ class Scoreboard(Turtle):
 
     def player1_wins(self):
         self.goto(0,0)
-        self.write("Player 1 wins", align="center", font=("Courier", 25, "normal"))
+        self.write("Player 1 wins.", align="center", font=("Courier", 25, "normal"))
 
     def player2_wins(self):
         self.goto(0,0)
-        self.write("Player 1 wins", align="center", font=("Courier", 25, "normal"))
+        self.write("Player 1 wins.", align="center", font=("Courier", 25, "normal"))
 
 
 
