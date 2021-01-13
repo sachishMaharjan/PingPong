@@ -22,9 +22,9 @@ class Scoreboard(Turtle):
         self.update_score()
 
     def update_score(self):
-        self.goto(0, 200)
+        self.goto(15, 250)
         self.clear()
-        self.write(f"{self.left_score}  {self.right_score}", align="center", font=("Courier", 80, "normal"))
+        self.write(f"Player1 {self.left_score}  {self.right_score}  Player2", align="center", font=("Courier", 40, "normal"))
 
     def middle_line(self):
         self.speed("fastest")
@@ -37,8 +37,13 @@ class Scoreboard(Turtle):
             self.penup()
             self.forward(20)
 
-    def game_over(self):
-        self.write("Game Over.", align="center", font=("Courier", 25, "normal"))
+    def player1_wins(self):
+        self.goto(0,0)
+        self.write("Player 1 wins", align="center", font=("Courier", 25, "normal"))
+
+    def player2_wins(self):
+        self.goto(0,0)
+        self.write("Player 1 wins", align="center", font=("Courier", 25, "normal"))
 
 
 

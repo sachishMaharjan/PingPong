@@ -54,9 +54,13 @@ while game_is_on:
         scoreboard.increase_right_player_score()
 
     # Detect when either player score is 10:
-    if scoreboard.left_score == 10 or scoreboard.right_score == 10:
+    if scoreboard.left_score == 10:
         game_is_on = False
-        scoreboard.gameover()
+        scoreboard.player1_wins()
+    elif scoreboard.right_score == 10:
+        game_is_on = False
+        scoreboard.player2_wins()
+
 
 screen.exitonclick()
 
